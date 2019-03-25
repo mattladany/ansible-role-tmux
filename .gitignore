@@ -1,0 +1,12 @@
+# Temporary files
+*.swp
+~*
+
+# Mac files
+.DS_Store
+
+# Retry
+*.retry
+
+# Vagrant
+.vagrant
