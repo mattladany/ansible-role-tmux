@@ -1,4 +1,4 @@
-Role Name
+Ansible Role - Tmux
 =========
 
 A brief description of the role goes here.
@@ -30,9 +30,9 @@ Including an example of how to use your role (for instance, with variables passe
 License
 -------
 
-BSD
+MIT
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+This role was created and is maintained by Matt Ladany.
