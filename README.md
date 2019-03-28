@@ -3,7 +3,7 @@ Ansible Role - Tmux
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/mattladany/ansible-role-tmux/master/LICENSE)
 
-Installs [tmux](https://github.com/tmux/tmux) from source on RedHat/Centos, Debian/Ubuntu or MacOS systems.
+Installs [tmux](https://github.com/tmux/tmux/wiki) from source on RedHat/Centos, Debian/Ubuntu or MacOS systems.
 
 Requirements
 ------------
