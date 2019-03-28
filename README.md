@@ -1,12 +1,26 @@
 Ansible Role - Tmux
 =========
 
-A brief description of the role goes here.
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/mattladany/ansible-role-tmux/master/LICENSE)
+
+Installs [tmux](https://github.com/tmux/tmux) from source on RedHat/Centos, Debian/Ubuntu or MacOS systems.
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+Requirements can be installed manually by the user or through the role by setting ```tmux_install_requirements: yes```.
+
+The Requirements are:
+
+- A working C compiler (e.g., gcc)
+- make
+- autoconf
+- automake
+- pkg-config
+- libevent
+- ncurses
+
+This list of requirements was taken directly from the tmux [README](https://raw.githubusercontent.com/tmux/tmux/master/README) so I am assuming it is correct and complete.
 
 Role Variables
 --------------
@@ -16,16 +30,16 @@ A description of the settable variables for this role should go here, including 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+None.
 
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
+```
+- hosts: servers
+  roles:
+     - { role: mattladany.tmux, tmux_version: 2.8, tmux_install_requirements: yes }
+ ```
 
 License
 -------
