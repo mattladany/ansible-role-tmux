@@ -8,5 +8,12 @@
 
 - name: Ensure the required packages are installed
   apt:
-    name: libevent ncurses libevent-dev ncurses-dev build-essential bison pkg-config
+    name:
+      - libevent-2.0-5
+      - ncurses-base
+      - libevent-dev
+      - ncurses-dev
+      - build-essential
+      - bison
+      - pkg-config
     state: present
