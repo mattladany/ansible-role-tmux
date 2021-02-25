@@ -1,2 +1,8 @@
 ---
 # defaults file for ansible-role-tmux
+
+# The version of tmux to install
+tmux_version: 3.1
+
+# Where the tarball should be downloaded and unarchived to
+tmux_download_dir: /usr/local/src

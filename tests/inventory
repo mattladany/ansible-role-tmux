@@ -1,2 +1,7 @@
-localhost
+[servers]
+192.168.1.209
 
+[all:vars]
+ansible_connection=ssh
+ansible_user=vagrant
+ansible_ssh_pass=vagrant

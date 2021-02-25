@@ -1,2 +1,6 @@
 ---
 # tasks file for ansible-role-tmux
+
+- include_tasks: "{{ ansible_os_family }}.yml"
+
+- include_tasks: install.yml

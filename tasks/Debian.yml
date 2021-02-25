@@ -1,0 +1,12 @@
+---
+# tasks for Debian systems
+
+- name: Ensure tmux has not been installed by the apt package manager
+  apt:
+    name: tmux
+    state: absent
+
+- name: Ensure the required packages are installed
+  apt:
+    name: libevent ncurses libevent-dev ncurses-dev build-essential bison pkg-config
+    state: present

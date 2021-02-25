@@ -1,0 +1,24 @@
+---
+# tasks for RedHat systems
+
+- name: Ensure the epele-release repo is installed
+  yum:
+    name: epel-release
+    state: present
+
+- name: Ensure tmux has not been installed by the yum package manager
+  yum:
+    name: tmux
+    state: absent
+
+- name: Ensure the required packages are installed
+  yum:
+    name:
+      - libevent
+      - ncurses
+      - libevent-devel
+      - ncurses-devel
+      - gcc
+      - make
+      - bison
+    state: present

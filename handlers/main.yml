@@ -1,2 +1,15 @@
 ---
 # handlers file for ansible-role-tmux
+
+# run make && make install only when configure has not been run before
+
+- name: make
+  make:
+    chdir: "{{ tmux_download_dir }}/tmux-{{ tmux_version }}"
+  listen: install
+
+- name: make install
+  make:
+    chdir: "{{ tmux_download_dir }}/tmux-{{ tmux_version }}"
+    target: install
+  listen: install
