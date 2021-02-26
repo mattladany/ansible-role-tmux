@@ -9,9 +9,20 @@ galaxy_info:
     - name: EL
       versions:
         - 7
+        - 8
+    - name: Debian
+      versions:
+        - stretch
+        - buster
+    - name: Ubuntu
+      versions:
+        - bionic
+        - focal
   galaxy_tags:
     - tmux
-    - commandline
+    - multiplexer
+    - development
+    - terminal
     - cli
 
 dependencies: []
