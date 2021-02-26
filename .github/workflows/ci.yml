@@ -15,7 +15,6 @@ jobs:
         distro:
           - centos8
           - centos7
-          - ubuntu2004
           - debian10
     steps:
       - name: Checkout the codebase

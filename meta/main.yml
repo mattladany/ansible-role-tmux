@@ -13,9 +13,6 @@ galaxy_info:
     - name: Debian
       versions:
         - buster
-    - name: Ubuntu
-      versions:
-        - focal
   galaxy_tags:
     - tmux
     - multiplexer

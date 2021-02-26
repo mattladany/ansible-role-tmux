@@ -3,7 +3,7 @@
 [![CI](https://github.com/geerlingguy/ansible-role-ntp/workflows/CI/badge.svg?event=push)](https://github.com/mattladany/ansible-role-tmux/actions?query=workflow%3ACI)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/mattladany/ansible-role-tmux/master/LICENSE)
 
-Installs [tmux](https://github.com/tmux/tmux/wiki) from source on RedHat or Debian systems.
+Installs [tmux](https://github.com/tmux/tmux/wiki) from source on Centos and Debian systems.
 
 ## Requirements
 
