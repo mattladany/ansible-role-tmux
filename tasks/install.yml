@@ -1,14 +1,15 @@
 ---
 # tasks for installing tmux from source
 
-- name: Ensure the tmux_download_dir exists
+- name: Ensure the specified download directory exists
   file:
     path: "{{ tmux_download_dir }}"
     state: directory
+    mode: 0644
 
 - name: download and unzip the specified tmux package
   unarchive:
-    src: "https://github.com/tmux/tmux/releases/download/{{ tmux_version }}/tmux-{{ tmux_version }}.tar.gz"
+    src: "{{ tmux_download_url }}"
     dest: "{{ tmux_download_dir }}"
     remote_src: yes
 

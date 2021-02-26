@@ -10,3 +10,6 @@
 
 # Vagrant
 .vagrant
+
+# Ansible
+.cache

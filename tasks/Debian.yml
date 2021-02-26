@@ -6,10 +6,14 @@
     name: tmux
     state: absent
 
+- name: Ensure the apt cache is updated
+  apt:
+    update_cache: yes
+
 - name: Ensure the required packages are installed
   apt:
     name:
-      - libevent-2.0-5
+      - libevent-2.1-6
       - ncurses-base
       - libevent-dev
       - ncurses-dev
@@ -17,3 +21,4 @@
       - bison
       - pkg-config
     state: present
+    update_cache: yes

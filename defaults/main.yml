@@ -6,3 +6,7 @@ tmux_version: 3.1
 
 # Where the tarball should be downloaded and unarchived to
 tmux_download_dir: /usr/local/src
+
+# The URL to download the tmux tarball from
+tmux_download_url: "https://github.com/tmux/tmux/releases/download/\
+                    {{ tmux_version }}/tmux-{{ tmux_version }}.tar.gz"
