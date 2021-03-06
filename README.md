@@ -3,17 +3,17 @@
 [![CI](https://github.com/geerlingguy/ansible-role-ntp/workflows/CI/badge.svg?event=push)](https://github.com/mattladany/ansible-role-tmux/actions?query=workflow%3ACI)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/mattladany/ansible-role-tmux/master/LICENSE)
 
-Installs [tmux](https://github.com/tmux/tmux/wiki) from source on Centos and Debian systems.
+Installs [tmux](https://github.com/tmux/tmux/wiki) from source on Linux systems.
 
 ## Requirements
 
 - A working C compiler (e.g., gcc)
 - make
-- autoconf
-- automake
 - pkg-config
 - libevent
+- libevent development tools
 - ncurses
+- ncurses development tools
 
 This list of requirements is taken directly from the tmux [README](https://raw.githubusercontent.com/tmux/tmux/master/README) so it is assumed to be correct and complete.
 

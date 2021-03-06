@@ -16,6 +16,9 @@ jobs:
           - centos8
           - centos7
           - debian10
+          - ubuntu1604
+          - ubuntu1804
+          - ubuntu2004
     steps:
       - name: Checkout the codebase
         uses: actions/checkout@v2

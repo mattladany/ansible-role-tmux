@@ -1,0 +1,11 @@
+---
+- name: Verify
+  hosts: all
+  tasks:
+    - name: Get tmux version
+      shell: tmux -V
+      register: result
+    - name: Fail if version was not retrieved
+      fail:
+        msg: Tmux was not installed
+      when: result.rc != 0

@@ -13,7 +13,6 @@
 - name: Ensure the required packages are installed
   apt:
     name:
-      - libevent-2.1-6
       - ncurses-base
       - libevent-dev
       - ncurses-dev

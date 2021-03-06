@@ -13,11 +13,15 @@ galaxy_info:
     - name: Debian
       versions:
         - buster
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+        - focal
   galaxy_tags:
     - tmux
     - multiplexer
     - development
     - terminal
-    - cli
 
 dependencies: []
