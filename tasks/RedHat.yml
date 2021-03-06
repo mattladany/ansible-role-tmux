@@ -1,7 +1,7 @@
 ---
 # tasks for RedHat systems
 
-- name: Ensure the epele-release repo is installed
+- name: Ensure the epel-release repo is installed
   yum:
     name: epel-release
     state: present

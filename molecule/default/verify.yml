@@ -3,8 +3,9 @@
   hosts: all
   tasks:
     - name: Get tmux version
-      shell: tmux -V
+      command: tmux -V
       register: result
+      changed_when: false
     - name: Fail if version was not retrieved
       fail:
         msg: Tmux was not installed
