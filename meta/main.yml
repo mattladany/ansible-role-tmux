@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: tmux
-  author: Matt Ladany
+  author: mattladany
   description: Download build and install tmux
   license: license (MIT)
   min_ansible_version: 2.4
